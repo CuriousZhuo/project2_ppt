@@ -1,0 +1,15 @@
+/* theme: nature-green — 自然绿色主题 · 教学/生物课专用 */
+:root{
+  --bg:#f8faf6;--bg-soft:#eef5ea;--surface:#ffffff;--surface-2:#f0f7ed;
+  --border:rgba(46,125,50,.14);--border-strong:rgba(46,125,50,.28);
+  --text-1:#1a2e1a;--text-2:#3d5a3d;--text-3:#7a9a7a;
+  --accent:#2E7D32;--accent-2:#4CAF50;--accent-3:#81C784;
+  --good:#2E7D32;--warn:#f59e0b;--bad:#dc2626;
+  --grad:linear-gradient(135deg,#2E7D32,#4CAF50 50%,#81C784);
+  --grad-soft:linear-gradient(135deg,#f0f7ed,#e8f5e9 50%,#f1f8e9);
+  --radius:14px;--radius-sm:10px;--radius-lg:22px;
+  --shadow:0 6px 24px rgba(46,125,50,.10);
+  --shadow-lg:0 18px 50px rgba(46,125,50,.16);
+  --font-sans:'Noto Sans SC','Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  --font-serif:'Noto Serif SC','Playfair Display',Georgia,serif;
+}

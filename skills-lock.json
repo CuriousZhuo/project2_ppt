@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "skills": {
+    "html-ppt": {
+      "source": "lewislulu/html-ppt-skill",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "55b8f19bc7feee6c7a78f35e0a7884057a0c0f1b13db84fa171e4b363079a7ff"
+    },
+    "marp-slide": {
+      "source": "softaworks/agent-toolkit",
+      "sourceType": "github",
+      "skillPath": "skills/marp-slide/SKILL.md",
+      "computedHash": "73f1da9e6938b404525a6e33fb19033dcda3358a79d5b9aeecde73a13c049831"
+    },
+    "ppt-visual": {
+      "source": "claude-office-skills/skills",
+      "sourceType": "github",
+      "skillPath": "ppt-visual/SKILL.md",
+      "computedHash": "5c704bd492e0960d168f4bb2073700e5a0609211db273c89739970b041d53919"
+    },
+    "pptx": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/pptx/SKILL.md",
+      "computedHash": "2275e4d8dba1790d52f6619b3e2fed04edc948beef545a2ad18e4a1be644426d"
+    },
+    "pptx-generator": {
+      "source": "minimax-ai/skills",
+      "sourceType": "github",
+      "skillPath": "skills/pptx-generator/SKILL.md",
+      "computedHash": "343583bb7a3286b74f5a9a499089a697242e44cf781319ad547dbc08f3ab7f4c"
+    }
+  }
+}

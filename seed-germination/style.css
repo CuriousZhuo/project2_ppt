@@ -1,0 +1,651 @@
+/* tpl-seed-germination — scoped styles for biology teaching deck */
+.tpl-seed-germination .slide {
+  padding: 56px 80px;
+}
+
+/* Cover slide */
+.tpl-seed-germination .cover-slide {
+  background: linear-gradient(160deg, #e8f5e9 0%, #c8e6c9 30%, #a5d6a7 60%, #81c784 100%);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.tpl-seed-germination .cover-slide .cover-icon {
+  font-size: 80px;
+  margin-bottom: 16px;
+}
+.tpl-seed-germination .cover-title {
+  font-family: var(--font-serif);
+  font-size: clamp(52px, 7vw, 88px);
+  font-weight: 800;
+  color: #1b3a1b;
+  letter-spacing: 0.04em;
+  margin: 0 0 12px;
+}
+.tpl-seed-germination .cover-sub {
+  font-size: 18px;
+  color: #3d6a3d;
+  letter-spacing: 0.06em;
+  margin: 0 0 8px;
+}
+.tpl-seed-germination .cover-bottom {
+  font-size: 15px;
+  color: #5a8a5a;
+  margin-top: 40px;
+  letter-spacing: 0.04em;
+}
+
+/* Section label */
+.tpl-seed-germination .section-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 4px 16px;
+  margin-bottom: 16px;
+}
+
+/* Kicker */
+.tpl-seed-germination .kicker {
+  font-family: var(--font-mono, monospace);
+  font-size: 13px;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0 0 14px 0;
+  font-weight: 600;
+}
+
+.tpl-seed-germination .h2 {
+  font-size: clamp(28px, 3.2vw, 42px);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin: 0 0 20px;
+  color: var(--text-1);
+}
+
+.tpl-seed-germination .h3 {
+  font-size: clamp(22px, 2.6vw, 30px);
+  line-height: 1.3;
+  margin: 0 0 12px;
+}
+
+.tpl-seed-germination .lede {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text-2);
+}
+
+.tpl-seed-germination .accent {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.tpl-seed-germination .dim { color: var(--text-2); }
+.tpl-seed-germination .dim2 { color: var(--text-3); }
+
+/* Learning objectives cards */
+.tpl-seed-germination .obj-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 28px;
+}
+.tpl-seed-germination .obj-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 18px;
+  text-align: center;
+  border-top: 4px solid var(--accent);
+  transition: transform 0.2s;
+}
+.tpl-seed-germination .obj-card:hover { transform: translateY(-3px); }
+.tpl-seed-germination .obj-card .obj-icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.tpl-seed-germination .obj-card .obj-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+.tpl-seed-germination .obj-card .obj-text {
+  font-size: 13px;
+  color: var(--text-2);
+  line-height: 1.5;
+}
+
+/* Question cards */
+.tpl-seed-germination .question-card {
+  background: var(--surface);
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 28px 32px;
+  margin-bottom: 16px;
+  position: relative;
+}
+.tpl-seed-germination .question-card .q-num {
+  position: absolute;
+  top: -16px;
+  left: 24px;
+  background: var(--accent);
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 16px;
+}
+.tpl-seed-germination .question-card .q-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-1);
+  margin: 0;
+  padding-top: 4px;
+}
+
+/* Experiment table */
+.tpl-seed-germination .exp-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+  font-size: 15px;
+}
+.tpl-seed-germination .exp-table th {
+  background: var(--accent);
+  color: #fff;
+  padding: 12px 14px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+.tpl-seed-germination .exp-table td {
+  padding: 12px 14px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+.tpl-seed-germination .exp-table tr:nth-child(even) td {
+  background: var(--surface-2);
+}
+.tpl-seed-germination .exp-table .highlight-row td {
+  background: #e8f5e9;
+  font-weight: 600;
+}
+.tpl-seed-germination .exp-table .fail { color: var(--bad); font-weight: 700; }
+.tpl-seed-germination .exp-table .pass { color: var(--good); font-weight: 700; }
+
+/* Conclusion box */
+.tpl-seed-germination .conclusion-box {
+  background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 20px 28px;
+  margin-top: 20px;
+  position: relative;
+}
+.tpl-seed-germination .conclusion-box .conclusion-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
+}
+.tpl-seed-germination .conclusion-box .conclusion-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-1);
+  margin: 0;
+}
+
+/* Method card */
+.tpl-seed-germination .method-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--accent);
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  margin-bottom: 10px;
+}
+.tpl-seed-germination .method-card .method-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+.tpl-seed-germination .method-card .method-text {
+  font-size: 15px;
+  color: var(--text-1);
+  font-weight: 500;
+}
+
+/* Light bulb cards (生活应用) */
+.tpl-seed-germination .life-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin-bottom: 12px;
+}
+.tpl-seed-germination .life-card .life-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+.tpl-seed-germination .life-card .life-q {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-1);
+  margin: 0 0 4px;
+}
+.tpl-seed-germination .life-card .life-a {
+  font-size: 14px;
+  color: var(--accent);
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Condition ring area */
+.tpl-seed-germination .ring-group {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 28px 0;
+}
+.tpl-seed-germination .ring-item {
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid var(--accent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f0f7ed;
+}
+.tpl-seed-germination .ring-item .ring-icon {
+  font-size: 36px;
+}
+.tpl-seed-germination .ring-item .ring-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-1);
+  margin-top: 6px;
+}
+
+/* Self-condition cards */
+.tpl-seed-germination .self-cond-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 18px;
+}
+.tpl-seed-germination .self-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+}
+.tpl-seed-germination .self-card .sc-num {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--accent);
+  font-family: var(--font-serif);
+}
+.tpl-seed-germination .self-card .sc-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-1);
+  margin: 4px 0;
+}
+.tpl-seed-germination .self-card .sc-bad {
+  font-size: 13px;
+  color: var(--bad);
+  margin: 0;
+}
+
+/* Flow chart (萌发过程) */
+.tpl-seed-germination .flow-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 18px;
+}
+.tpl-seed-germination .flow-step {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 20px;
+}
+.tpl-seed-germination .flow-step .step-num {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.tpl-seed-germination .flow-step .step-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-1);
+}
+.tpl-seed-germination .flow-step .step-highlight {
+  background: #ffe082;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+.tpl-seed-germination .flow-arrow {
+  text-align: center;
+  font-size: 20px;
+  color: var(--accent);
+  padding: 2px 0 2px 60px;
+}
+
+/* Comparison table */
+.tpl-seed-germination .compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 20px;
+}
+.tpl-seed-germination .compare-col {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+.tpl-seed-germination .compare-col.left-col { border-top: 4px solid #4CAF50; }
+.tpl-seed-germination .compare-col.right-col { border-top: 4px solid #FF9800; }
+.tpl-seed-germination .compare-col .cmp-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-1);
+  margin: 0 0 16px;
+  text-align: center;
+}
+.tpl-seed-germination .compare-col .cmp-item {
+  font-size: 15px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-2);
+}
+.tpl-seed-germination .compare-col .cmp-item:last-child { border-bottom: none; }
+
+/* Two-column layout */
+.tpl-seed-germination .two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 20px;
+}
+.tpl-seed-germination .col-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+.tpl-seed-germination .col-box.left-box { border-left: 5px solid var(--accent); }
+.tpl-seed-germination .col-box.right-box { border-left: 5px solid var(--accent-3); }
+.tpl-seed-germination .col-box .col-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-1);
+  margin: 0 0 12px;
+}
+
+/* Tree / mind-map */
+.tpl-seed-germination .mind-map {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--text-1);
+  white-space: pre;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 28px;
+  margin-top: 16px;
+}
+
+/* Quiz */
+.tpl-seed-germination .quiz-block {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  margin-bottom: 12px;
+}
+.tpl-seed-germination .quiz-block .quiz-q {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-1);
+  margin: 0 0 10px;
+}
+.tpl-seed-germination .quiz-block .quiz-opts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+.tpl-seed-germination .quiz-block .quiz-opt {
+  font-size: 14px;
+  color: var(--text-2);
+  padding: 6px 12px;
+  background: var(--surface-2);
+  border-radius: 6px;
+  text-align: center;
+}
+.tpl-seed-germination .quiz-block .quiz-ans {
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 600;
+  margin-top: 8px;
+}
+.tpl-seed-germination .quiz-block .quiz-ans span {
+  background: #e8f5e9;
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+
+/* Short answer */
+.tpl-seed-germination .sa-block {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  margin-bottom: 10px;
+}
+.tpl-seed-germination .sa-block .sa-q {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-1);
+  margin: 0 0 8px;
+}
+.tpl-seed-germination .sa-block .sa-a {
+  font-size: 14px;
+  color: var(--accent);
+  line-height: 1.6;
+}
+
+/* After-school practice cards */
+.tpl-seed-germination .practice-card {
+  display: flex;
+  gap: 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 26px;
+  margin-bottom: 14px;
+  align-items: flex-start;
+}
+.tpl-seed-germination .practice-card .pc-icon {
+  font-size: 40px;
+  flex-shrink: 0;
+}
+.tpl-seed-germination .practice-card .pc-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-1);
+  margin: 0 0 6px;
+}
+.tpl-seed-germination .practice-card .pc-desc {
+  font-size: 14px;
+  color: var(--text-2);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Closing / quote slide */
+.tpl-seed-germination .closing-slide {
+  background: linear-gradient(160deg, #1b3a1b 0%, #2E7D32 40%, #4CAF50 100%);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.tpl-seed-germination .closing-slide .closing-quote {
+  font-family: var(--font-serif);
+  font-size: clamp(24px, 3vw, 36px);
+  line-height: 1.7;
+  color: #fff;
+  max-width: 680px;
+  margin: 0 auto;
+}
+.tpl-seed-germination .closing-slide .closing-author {
+  font-size: 16px;
+  color: rgba(255,255,255,0.7);
+  margin-top: 20px;
+  letter-spacing: 0.06em;
+}
+
+/* Thanks slide */
+.tpl-seed-germination .thanks-slide {
+  background: linear-gradient(160deg, #e8f5e9 0%, #c8e6c9 40%, #a5d6a7 100%);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.tpl-seed-germination .thanks-slide .thanks-title {
+  font-family: var(--font-serif);
+  font-size: clamp(48px, 6vw, 72px);
+  color: #1b3a1b;
+  letter-spacing: 0.06em;
+}
+
+/* Emoji / icon helpers */
+.tpl-seed-germination .icon-lg { font-size: 28px; }
+
+/* Highlight / key point */
+.tpl-seed-germination .key-point {
+  display: inline-block;
+  background: #fff9c4;
+  padding: 2px 10px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* Structured list */
+.tpl-seed-germination .info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.tpl-seed-germination .info-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 15px;
+  color: var(--text-1);
+}
+.tpl-seed-germination .info-list li:last-child { border-bottom: none; }
+.tpl-seed-germination .info-list li strong { color: var(--accent); }
+
+/* Spacing */
+.tpl-seed-germination .mt-s { margin-top: 10px; }
+.tpl-seed-germination .mt-m { margin-top: 20px; }
+.tpl-seed-germination .mt-l { margin-top: 32px; }
+.tpl-seed-germination .tc { text-align: center; }
+
+/* Sleep section */
+.tpl-seed-germination .info-block {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin-bottom: 12px;
+}
+.tpl-seed-germination .info-block h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+.tpl-seed-germination .info-block p {
+  font-size: 15px;
+  color: var(--text-2);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Note for emphasis */
+.tpl-seed-germination .note-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: #fff9e6;
+  border: 1px solid #ffe082;
+  border-radius: var(--radius-sm);
+  padding: 14px 18px;
+  margin-top: 16px;
+  font-size: 14px;
+  color: #6d5e00;
+}
+.tpl-seed-germination .note-tip .tip-icon { font-size: 20px; flex-shrink: 0; }
+
+/* Germination diagram */
+.tpl-seed-germination .germ-diagram {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tpl-seed-germination .germ-diagram .germ-node {
+  background: var(--surface);
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-1);
+  min-width: 100px;
+}
+.tpl-seed-germination .germ-diagram .germ-arrow {
+  font-size: 24px;
+  color: var(--accent);
+  font-weight: 700;
+}
